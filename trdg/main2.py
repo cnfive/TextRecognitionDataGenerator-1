@@ -114,7 +114,7 @@ class Generate:
             shutil.move(os.path.join(self.output_gen, images[i]), os.path.join(output_tran, '{0}_{1}.jpg'.format(str(self.flag), str(i))))
             with open(os.path.join(output_tran, '{0}_{1}.txt'.format(str(self.flag), str(i))), 'w', encoding='utf8') as f:
                 print(text)
-                f.write(text.replace(' ', ''))
+                f.write(text.replace(' ', '').replace("	",""))
                 print(text)
         self.flag += 1
 

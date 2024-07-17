@@ -29,5 +29,5 @@ with open(destination_folder_txt+'\gt.txt', 'w', encoding='utf-8') as file1:
                             shutil.copy(os.path.join(source_folder, image_file), destination_folder_img)
                             #把文本内容写入到gt.txt
 
-                            file1.write('images/'+image_file+'_____'+content + '\n')
+                            file1.write('images/'+image_file+'_____'+content )
  
